@@ -290,7 +290,7 @@
                     If ($ShowDay) {
                         $HTMLBox.= "<td style='color:#" . $ColorHEX . "'>" . $WasteDayOfWeek . "</td><td>";
                     }
-                    $HTMLBox.= "<td style='color:#" . $ColorHEX . "'>" . $this->Translate("TOMORROW") . "</td></tr>";
+                    $HTMLBox.= "<td style='color:#" . $ColorHEX . "'>" . $this->Translate("MORGEN") . "</td></tr>";
                     If ($PushIsActive)
                     {
                         $this->SendDebug($ModulName, $this->Translate("Push notification is sending now."), 0);
