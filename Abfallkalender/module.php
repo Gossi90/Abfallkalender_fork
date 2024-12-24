@@ -314,7 +314,7 @@
                     If ($ShowDay) {
                         $HTMLBox.= "<td style='color:#" . $ColorHEX . "'>" . $WasteDayOfWeek . "</td><td>";
                     }
-                    $HTMLBox.= "<td style='color:#" . $ColorHEX . "'>" . $this->Translate("TODAY") . "!</td></tr>";
+                    $HTMLBox.= "<td style='color:#" . $ColorHEX . "'>" . $this->Translate("HEUTE") . "!</td></tr>";
                 }
                 Else
                 {
