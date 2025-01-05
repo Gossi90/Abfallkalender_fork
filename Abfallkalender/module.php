@@ -278,7 +278,7 @@
                 $WasteDayOfWeek = "";
                 $ShowDay = $this->ReadPropertyBoolean("cbxHtmlShowDay");
                 If ($ShowDay) {
-                    $WasteDayOfWeek = $this->Translate($value->format('D'));
+                    $WasteDayOfWeek = $this->Translate($value->format('D.m'));
                 }
                 
                 $HTMLBox.= "<tr><td>" . $key . ":</td>";
