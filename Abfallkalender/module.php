@@ -294,7 +294,7 @@
                     If ($PushIsActive)
                     {
                         $this->SendDebug($ModulName, $this->Translate("Push notification is sending now."), 0);
-                        VISU_PostNotification($PushInstanceID, $ModulName, $this->Translate("Tomorrow will ").$key.$this->Translate(" picked up!"), "", 0);
+                        WFC_PushNotification($PushInstanceID, $ModulName, $this->Translate("Tomorrow will ").$key.$this->Translate(" picked up!"), "", 0);
                     }
                     If ($MailIsActive)
                     {
