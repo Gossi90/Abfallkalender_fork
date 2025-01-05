@@ -278,7 +278,7 @@
                 $WasteDayOfWeek = "";
                 $ShowDay = $this->ReadPropertyBoolean("cbxHtmlShowDay");
                 If ($ShowDay) {
-                    $WasteDayOfWeek = $this->Translate($value->format('D.m'));
+                    $WasteDayOfWeek = $this->Translate($value->format('D'));
                 }
                 
                 $HTMLBox.= "<tr><td>" . $key . ":</td>";
@@ -294,7 +294,7 @@
                     If ($PushIsActive)
                     {
                         $this->SendDebug($ModulName, $this->Translate("Push notification is sending now."), 0);
-                        WFC_PushNotification($PushInstanceID, $ModulName, $this->Translate("Tomorrow will ").$key.$this->Translate(" picked up!"), "", 0);
+                       // WFC_PushNotification($PushInstanceID, $ModulName, $this->Translate("Tomorrow will ").$key.$this->Translate(" picked up!"), "", 0);
                     }
                     If ($MailIsActive)
                     {
